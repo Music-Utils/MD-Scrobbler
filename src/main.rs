@@ -1,4 +1,3 @@
-extern crate rustfm_scrobble;
 use rustfm_scrobble::{Scrobble, Scrobbler};
 use serde::Deserialize;
 use std::{fs::File, io, io::prelude::*};
