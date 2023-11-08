@@ -10,6 +10,6 @@ fn main() {
     let mut scrobbler = Scrobbler::new(api_key, api_secret);
     let _ = scrobbler.authenticate_with_password(username, password);
 
-    let song = &Scrobble::new("Example Artist", "Example Song", "Example Album");
+    let song = &Scrobble::new("black midi", "Near DT, MI", "Schlagenheim");
     let _ = scrobbler.scrobble(song);
 }
