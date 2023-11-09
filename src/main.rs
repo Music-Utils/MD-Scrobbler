@@ -5,11 +5,14 @@ use std::thread;
 mod scrobble;
 
 fn main() -> Result<(), std::io::Error> {
+    let mut counter = 1;
     loop {
+        println!("iteration {}", counter);
         let input = vec_from_input();
         thread::spawn(|| {
             scrobble(input);
         });
+        counter += 1;
     }
     //Ok(())
 }
